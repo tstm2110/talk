@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'check/example'
   get 'tweets/index'
 
   get 'tweets/show'
@@ -18,6 +19,6 @@ Rails.application.routes.draw do
   delete 'logout', to: "sessions#destroy"
   
   resources :tasks
-
+resource :favorites, only: [:create, :destroy]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

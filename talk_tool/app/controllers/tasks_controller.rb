@@ -26,7 +26,9 @@ class TasksController < ApplicationController
     @task.destroy
     redirect_to tasks_path
  end
-
+ def samurai_params
+      params.require(:samurai).permit(:name, :checkbox,ingredients:[])
+ end
 private
  def task_params
       params.require(:task).permit(:title)

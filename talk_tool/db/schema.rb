@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_05_102110) do
+ActiveRecord::Schema.define(version: 2022_03_06_195235) do
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "post_image_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "tasks", force: :cascade do |t|
     t.string "title"
@@ -28,6 +35,7 @@ ActiveRecord::Schema.define(version: 2022_03_05_102110) do
   create_table "users", force: :cascade do |t|
     t.string "email"
     t.string "password_digest"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
