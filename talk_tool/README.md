@@ -1,24 +1,25 @@
-# README
+アプリ名
+task_management
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+サイト概要
+仕事のタスク管理用のアプリケーションです。
 
-Things you may want to cover:
+テーマ
+GemのdeviseやImageMagickを使わずに作成することを意識しています。
 
-* Ruby version
+テーマを選んだ理由
+タスク管理によって開発のサポートを目標とするアプリケーションの開発。
 
-* System dependencies
+ターゲットユーザ
+個人（プライベート）。今後チームでの作業時に開発のサポートとなる機能を盛り込みたいです。
 
-* Configuration
+主な利用シーン
+プライベート
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+開発環境
+OS：Linux(CentOS)
+言語：HTML,CSS,JavaScript,Ruby,SQL
+フレームワーク：Ruby on Rails
+JSライブラリ：jQuery
+IDE：Cloud9
